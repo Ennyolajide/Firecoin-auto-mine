@@ -17,6 +17,7 @@ async function main() {
     axios.post(urls.loadState, {}, { headers: getHeaders() })
         .then((res) => {
             const { clicks, wood } = res.data;
+            console.log(res.data);
             clicks ? logInfo(res.data) : logInfoError();
             increment = clicks;
             console.log('Increment:', increment);

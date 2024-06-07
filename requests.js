@@ -21,14 +21,11 @@ async function fireClick(data) {
     });
 }
 
-
-
-
 function logInfo(object) {
     console.log(
         'User:', chalk.blue(getUsernameFromAuthQuery()),
         '| Coins:', chalk.yellow(object?.clicks),
-        '| Click Bonus', chalk.green(object?.clickBonus?.bonus),
+        '| Click Bonus', chalk.green(object?.clickerBonus?.bonus),
         '| Wood:', chalk.magenta(object?.wood?.count), chalk.blue('/'), chalk.green(object?.wood?.max_value),
     );
 }
