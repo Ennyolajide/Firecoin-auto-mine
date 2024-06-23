@@ -26,7 +26,7 @@ async function main() {
                 (wood?.count > 0) ? fireClick(buildClicks(increment)) : exitProcess();
             }
 
-            handleFireClick();
+            setTimeout(handleFireClick, 1500);
 
             setInterval(handleFireClick, (getRandom(minInterval, maxInterval) * 1000));
         })
